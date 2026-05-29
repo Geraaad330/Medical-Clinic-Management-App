@@ -144,6 +144,7 @@ SQLAlchemy==2.0.36
 termcolor==2.5.0
 tomlkit==0.13.2
 typing_extensions==4.12.2
+```
 
 ## Step-by-Step — Local Setup (Development)
 
