@@ -4,13 +4,13 @@
 
 Upon logging in, the user sees the main dashboard with key information:
 
-- Current date and day of the week
-- Number of today's appointments and all scheduled appointments (for the logged-in doctor/medical staff)
-- Personal data of the logged-in user, their role, and specialties
+- Current date and day of the week  
+- Number of today's appointments and all scheduled appointments (for the logged-in doctor/medical staff)  
+- Personal data of the logged-in user, their role, and specialties  
 
 Available options include:
-- Theme selection (light/dark)
-- Full-screen mode
+- Theme selection (light/dark)  
+- Full-screen mode  
 
 <img width="2557" height="1390" alt="image" src="https://github.com/user-attachments/assets/3c104d7b-2f33-4144-a36d-5831de0f643d" />
 <br><br>
@@ -20,76 +20,80 @@ Available options include:
 
 Manages patient data, diagnoses, and prescriptions.
 
-- The patient list includes: first name, last name, PESEL (National ID), phone, email, address, date of birth, and status
-- The list of diagnoses and prescriptions contains linked patient information
-- Ability to add, update, and delete patients, diagnoses, and prescriptions
-- Access depends on the user's role (medical staff only have access to their own patients)
+- The patient list includes: first name, last name, PESEL (National ID), phone, email, address, date of birth, and status  
+- The list of diagnoses and prescriptions contains linked patient information  
+- Ability to add, update, and delete patients, diagnoses, and prescriptions  
+- Access depends on the user's role (medical staff only have access to their own patients)  
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/d2d3ea5c-bced-45eb-ba65-ef3715390f46" />
 <br><br>
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/c94f5313-1d9d-4d67-b9ec-077e6708ad2b" />
 
+
 ## Employees Module
 
 Manages employee data, their services, and specialties.
 
-- Employee list with basic contact details and activity status
-- List of services and specialties assigned to employees
-- Tables mapping services and specialties facilitate workflow organization
-- Add, update, and delete operations are available to roles: administrator, receptionist, IT specialist, and manager
+- Employee list with basic contact details and activity status  
+- List of services and specialties assigned to employees  
+- Tables mapping services and specialties facilitate workflow organization  
+- Add, update, and delete operations are available to roles: administrator, receptionist, IT specialist, and manager  
 
 <img width="1918" height="1079" alt="serv_spec_CRUD" src="https://github.com/user-attachments/assets/9006cd99-feb7-4ec9-a263-c2dd61011a59" />
 <br><br>
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/7ad8d902-a71f-451f-9108-1368ae806967" />
 
+
 ## Rooms and Reservations Module
 
 Manages rooms and reservations.
 
-- Room list including room number, floor, and type
-- Reservation list with date, time, room number, and reservation type
-- Ability to add, update, and delete rooms, room types, and reservations
-- Access granted to all roles except the guest role
+- Room list including room number, floor, and type  
+- Reservation list with date, time, room number, and reservation type  
+- Ability to add, update, and delete rooms, room types, and reservations  
+- Access granted to all roles except the guest role  
 
 <img width="1915" height="1079" alt="rooms_CRUD" src="https://github.com/user-attachments/assets/e299f0a1-a5b3-46b6-a041-da59cc15bb70" />
 <br><br>
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/3d7bdeb6-60e4-457e-950f-f5b7ca040df3" />
 
+
 ## Schedule Module
 
 Manages appointments and internal meetings.
 
-- The appointment list includes patient data, employee, service, room, date, time, notes, and appointment status
-- List of meeting types and internal meetings
-- Ability to add, update, and delete meetings and participants
-- All operations available to roles except the guest role
+- The appointment list includes patient data, employee, service, room, date, time, notes, and appointment status  
+- List of meeting types and internal meetings  
+- Ability to add, update, and delete meetings and participants  
+- All operations available to roles except the guest role  
+
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/3430c1b6-2fb7-4e58-8938-b4718030231c" />
 <br><br>
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/008367d3-7792-4c30-b19e-81799495c082" />
 
+
+
 ## Administrative Settings Module
 
 The most restricted module, accessible only to the Administrator and IT Specialist.
 
-- Management of users, roles, and patient-to-staff assignments
-- Full access to add, update, and delete users and assignments
-- Crucial for the authorization system and patient care organization
+- Management of users, roles, and patient-to-staff assignments  
+- Full access to add, update, and delete users and assignments  
+- Crucial for the authorization system and patient care organization  
 
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/13156eec-0b5d-4f2e-82df-27347ff7fb8c" />
 <br><br>
 <img width="1919" height="1079" alt="prezentacja_roles_list" src="https://github.com/user-attachments/assets/3e7c318b-5b74-4f78-a480-b2342a237801" />
 
----
 
 # README — Running the Project
 
-Below is a comprehensive guide on how to run the project locally and how to build the `.exe` file. The instructions assume a Windows environment and a Python installation outside of the Microsoft Store.
-**Important**: work within a virtual environment (`venv`) — this is the best practice.
+Below is a comprehensive guide on how to run the project locally and how to build the `.exe` file. The instructions assume a Windows environment and a Python installation outside of the Microsoft Store.  
+**Important**: Work within a virtual environment (`venv`) — this is the best practice.
 
 ## Requirements
-- Python **3.11.9**
-- OS: Windows (instructions include PowerShell commands)
+- Python **3.11.9** - OS: Windows (instructions include PowerShell commands)
 - Installed packages (use the `requirements.txt` file)
 
 ## `requirements.txt` Content
