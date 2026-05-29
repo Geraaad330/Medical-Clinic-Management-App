@@ -144,3 +144,38 @@ SQLAlchemy==2.0.36
 termcolor==2.5.0
 tomlkit==0.13.2
 typing_extensions==4.12.2
+
+## Step-by-Step — Local Setup (Development)
+
+1. Clone the repository:
+```powershell
+git clone [https://github.com/Geraaad330/Aplikacja-do-zarzadzania-klinika-lekarska.git](https://github.com/Geraaad330/Aplikacja-do-zarzadzania-klinika-lekarska.git)
+cd Aplikacja-do-zarzadzania-klinika-lekarska
+```
+
+2. Create and activate a virtual environment:
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate
+```
+
+3. Update `pip` and install dependencies:
+```powershell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+4. Run the application:
+```powershell
+python main.py
+```
+
+## Step-by-Step — Building the `.exe` file (Windows)
+
+Run the following command in the project directory:
+
+```powershell
+python -m PyInstaller --windowed --noconfirm --hidden-import=bcrypt --add-data "database:database" --add-data "..\Projekt_inzContent:Projekt_inzContent" main.py
+```
+
+After the build is complete, you will find the result in the `dist/main/` directory.
